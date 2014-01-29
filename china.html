@@ -1,0 +1,235 @@
+<html>
+	<head>
+		<title>Clomx Travels</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="sliderstyles.css" />
+		<script src="jquery.js"></script>
+	<script>
+	var name = "#floatMenu";  
+	var menuYloc = null; 
+	
+    $(document).ready(function(){
+
+	$("ul.subnav").parent().append("<span></span>"); //Only shows drop down trigger when js is enabled (Adds empty span tag after ul.subnav*)
+	
+	$("ul.topnav li span").click(function() { //When trigger is clicked...
+		
+		//Following events are applied to the subnav itself (moving subnav up and down)
+		$(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click
+
+		$(this).parent().hover(function() {
+		}, function(){	
+			$(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up
+		});
+
+		//Following events are applied to the trigger (Hover events for the trigger)
+		}).hover(function() { 
+			$(this).addClass("subhover"); //On hover over, add class "subhover"
+		}, function(){	//On Hover Out
+			$(this).removeClass("subhover"); //On hover out, remove class "subhover"
+		});
+
+	menuYloc = parseInt($(name).css("top").substring(0,$(name).css("top").indexOf("px")))  
+    $(window).scroll(function () {   
+        var offset = menuYloc+$(document).scrollTop()+"px";  
+        $(name).animate({top:offset},{duration:500,queue:false});  
+    });
+	});
+	</script>
+	</head>
+	<body>
+	<div id="container">
+	<div id="header">
+		<img src="clomx.png" width="300" height="80" border="0px" class="logo" /> 
+		<div id="tagline">
+			for all your travel needs! 
+		</div> 
+		<div id="navigation">
+			<ul class="topnav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="index.html#countryPage">Destinations</a>
+					<ul class="subnav">
+						<li><a href="australia.html">Australia</a></li>
+						<li><a href="brazil.html">Brazil</a></li>
+						<li><a href="china.html">China</a></li>
+						<li><a href="egypt.html">Egypt</a></li>
+						<li><a href="france.html">France</a></li>
+					</ul>
+				</li>
+				<li><a href="quote.html">Get A Quote</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="floatMenu">  
+    <ul class="menu1">  
+        <li><a href="index.html"> Home </a></li>  
+		<li><a href="index.html#countryPage"> Destinations </a></li>  
+    </ul>  
+      
+    <ul  class="menu2">  
+		<li><a href="china.html#china_info"> Information </a></li>  
+        <li><a href="china.html#china_tours"> Tours </a></li>  
+        <li><a href="china.html#china_tips"> Tips </a></li>  
+    </ul>  
+      
+    <ul  class="menu3">  
+        <li><a href="quote.html"> Get a Quote </a></li>
+		<li><a href="about.html"> About </a></li>		
+    </ul>  
+	</div>
+	
+	<div id="content">
+			<p>You are here: <a href="index.html">Home</a> >> <a href="index.html#countryPage">Destinations</a> >> <a href="#">China</a></p>
+		<h2>China</h2>
+        <div class="keyinfo glossy"> 
+        	<h3>
+				<a name="china_info">Information</a>
+			</h3>
+        	<p><span class="image-wrap" style="position:relative; display:inline-block; background:url(China_images/China_flag.jpg) no-repeat center center; float: right"><img src="China_images/China_flag.jpg" align="right" style="border-radius:20px" /></span>
+			China is an immense and extraordinary country with numerous sights with breathtaking natural beauty. 
+				It covers a vast area of 9.6 million square kilometers, spanning thousands of miles from the deserts, montains 
+				in the west to the ocean and plain on the east. Originated in the eastern area of the Yellow River Region, 
+				the country's civilization is more than 5,000 years old and was considered as one of four ancient 
+				civilizations of the world. From historical sites and relics to rich and tasty cuisine, 
+				from the legendary culture to traditional arts, China always attracts travelers who 
+				admire and courious on exploring the beauty of her.<br/><br/>
+			</p>
+		</div>
+    <hr>
+        <div class="tours">
+          <h3>
+			<a name="china_tours">Tours</a>
+		  </h3>
+          <table width="958" height="134" border="1" class="countryinfo">
+			<thead>
+				<tr>
+					<th scope="col" class="rounded-company" width="20%">Tour Image</th>
+					<th scope="col" class="rounded-q1" width="60%">Tour Description</th>
+					<th scope="col" class="rounded-q2" width="20%">Key Info</th>
+				</tr>
+		  </thead> 
+		  <tfoot> 
+            <tr class="odd">
+              <td width="150" align="center"><img src="China_images/tour1.jpg" width="154" height="102"></td>
+              <td width="681">
+                <h3 align="center">Ancient Culture and Modern Miracles in Beijing and Xi'an</h3>
+                <p>A 7 days/6 nights tour in Beijing and Xi'an. Hike the Great Wall, walk the Forbidden City, 
+			  roam the Long Corridor at the Summer Palace, see the Temple of Heaven in this imperial palace. 
+			  Travel back in time to see the Banpo Museum, Terracotta Warriors & Big Wild Goose Pagoda and discover 
+			  the tomb of Emperor Qin Shihuang in Xi'an. </p>
+              </td>
+              <td align="center"><b>Price</b> - from AU$3695. <br /><b>Duration</b> - 7 days<br />
+				<a href="http://www.beijingxiantour.com/beijing-xian-tours/7-day-beijing-xian-tour/">More Info</a>
+              </td>
+            </tr>
+            <tr class="even">
+              <td align="center"><img src="China_images/tour2.jpg" width="154" height="102"></td>
+              <td>
+                <h3 align="center">Hangzhou - Paradise on Earth</h3>
+                <p>A 4 days/3 nights tour from Shanghai to Hangzhou. Travel the West Lake(including the Island on the lake), 
+			  Lingyin Temple, Six Harmonies Pagoda, Listen the legend of West Lake while crusing boat on the lake, and enjoy the tea in Meijiawu Tea Plantation and Tea Shop and Farmhouse Tea Shop. 
+			  </p>
+              </td>
+              <td width="113" align="center"><b>Price</b> - from AU$399<br /><b>Duration</b> - 4 days<br />
+			  <a href="http://www.chinahighlights.com/tour/hangzhoutour/hz-3/">More Info</a>
+              </td>
+            </tr>
+            <tr class="odd">
+              <td align="center"><img src="China_images/tour3.jpg" width="154" height="102"></td>
+              <td>
+                <h3 align="center">China's Golden Triangle</h3>
+                <p>A 8 days/7 nights tour to Beijing, Xi'an and Shanghai. See Tian'anmen Square, visit the Forbidden City, 
+			  the Temple of Heaven, hike the Badaling Great Wall. Appreciate Xi'an Historic Relics, visit the Terra-cotta Warriors and Horses. 
+			  Have three days sightseeing of modern Shanghai. Walk through the Yu Garden, visit the Bund and Jade Buddha Temple. 
+			  Explore the modern Shanghai from the Oriental Pearl TV Tower. Includes all entries. Dinners in local restaurants. 
+			  Includes flights. From AU$4370.</p>
+              </td>
+              <td align="center"><b>Price</b> - from AU$1399<br /><b>Duration</b> - 8 days<br />
+			  <a href="http://www.chinahighlights.com/tour/cht-27/">More Info</a>
+              </td>
+            </tr>
+            <tr class="even">
+              <td align="center"><img src="China_images/tour4.jpg" width="154" height="102"></td>
+              <td>
+                <h3 align="center">Mystery and Essence of Tibet</h3>
+                <p>A 6 days/5 nights tour to the capital of Tibet - Lhasa. Visit the famous Potala Palace, enjoy the high-altitude natural beauty, walk through Barkhor Street, listen to the history in Jokhang Temple, see  Drepung Monastery, Sera Monastery and Gandan Monastery.
+			  </p>
+              </td>
+              <td align="center"><b>Price</b> - from AU$939.<br /><b>Duration</b> - 6 days<br/> <a href="http://www.chinahighlights.com/tour/shigatsetour/xz-2/">More Info</a>
+			  </td>
+			 
+            </tr>
+            <tr class="odd">
+              <td align="center"><img src="China_images/tour5.jpg" width="154" height="102"></td>
+              <td>
+                <h3 align="center">The Ethnic Minorities in Yunnan</h3>
+                <p>A 15 days/14 nights tour to Yunnan Province - with the most number of ethnic population in China. Experience exciting ethnic customs,
+			  myths, singing, dances, paintings and ancient music.Visit Yunnan Nationality Museum, to enjoy the ecological environment, religious practice, 
+			  culture and cultural relics of ethnic minorities, travel the capital of Yunnan - Kunming, and cruise along Li River. </p>
+              </td>
+              <td align="center"><b>Price</b> - from AU$2149 <br /><b>Duration</b> - 15 days<br />
+			  <a href="http://www.travelchinaguide.com/tour/memorable/tour-111b.htm">More Info</a>
+              </td>
+            </tr>
+			</tfoot> 
+            </table>
+        </div>
+        <hr>
+		<br />
+        <div class="tips">
+          <h3>
+			<a name="china_tips">Tips</a>
+		  </h3>
+            <p>
+                <ul>
+                    <li>Chinese usually use chopsiticks. Although there are some restaurants offering forks and knifes, it would be good to learn how to use them before travelling to China.</li> 
+					<li>Learn some Chinese, such as numbers which can be used for communicating with cashiers when you go shopping. </li>
+					<li>While travelling in a city, it is prefereable to take the subway or train instead of taking a bus or taxi, because traffic congestion always happens in China, especially in Beijing and Shanghai.</li>
+					<li>Facebook and Twitter have been banned in China. So you can only save your photos and upload then online when you finish travelling in China. But you could still reply the facebook message via email if you open the email notification. </li>
+					<li>Remain alert and keep your valuables with you at all times. Pickpocketing usually happens in crowded places such as shopping centre.</li>
+					<li>In China, spring is from April to June, summer from June to September, Autumn from September to October, and winter from October to March. It is colder in north than in south. Bring clothes according to the season when you are travelling.</li>
+                </ul>
+            </p>
+        </div>
+        </div>
+</div>
+	<div id="footer">
+		<center>
+		<table>
+		<tr>
+		<td width="200px"> 
+			<h3>About Clomx Travels</h3>
+			<img src="clomx_small.gif" height="50" width="100" align="left" style="padding: 3px; border:1px solid #fefefe" /> Clomx Travels is designed to help you, the traveler, have an easy, carefree and no-stress approach to planning your next trip! Check out our top 5 countries, or instantly get a preliminary quote for your holiday. Feel free to <a href="about.html">contact</a> our staff for more details. 
+						<br/><br/>
+		</td> 
+		<td width="200px">
+			<h3>Clomx Travels</h3>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="sitemap.html">Sitemap</a></li>
+				<li><a href="quote.html">Get a Quote</a></li>
+			</ul>
+						<br/><br/>
+		</td>
+		<td width="200px">
+			<h3>Destinations</h3>
+			<ul>
+				<li><a href="australia.html">Australia</a></li>
+				<li><a href="brazil.html">Brazil</a></li>
+				<li><a href="china.html">China</a></li>
+				<li><a href="egypt.html">Egypt</a></li>
+				<li><a href="france.html">France</a></li>
+			</ul>
+		</td>
+		</tr>
+		</table>
+		</center>
+	</div>
+		<div id="copy">
+		Copyright &copy Clomx Travels, 2012
+		</div>
+</body>
+</html>

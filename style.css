@@ -1,0 +1,686 @@
+/********************************************* General Styling ******************************/ 
+.tips ul li, .sitemap ul li{
+	list-style-image: url(arrow.png);
+}
+
+.sitemap ul ul li{
+	margin-left: 40px; 
+} 
+
+.sitemap ul ul ul li{
+	margin-left: 80px; 
+} 
+
+body{
+	margin: 0; 
+	background: url(header_slice.jpg);
+	background-repeat:repeat-x;
+	font-family: PTSansRegular, Arial, Helvetica, Tahoma, sans-serif;
+	background-color: #f9f9f9;
+	overflow-x: hidden;
+} 
+
+form{
+	background: #F2F2F2;
+	border: 1px solid #CDCDCD;
+	width: 400px;
+	padding: 10px;
+}
+
+img{
+	margin: 3px; 
+}
+
+a {
+	color: #36648B; 
+	font-family: DroidSansRegular, Arial, Helvetica, Tahoma, sans-serif; 
+	text-decoration: none; 
+} 
+
+h3, h3 a{
+	font-family: RawengulkSansRegular, Arial, Helvetica, Tahoma, sans-serif; 
+	font-size: 17pt; 
+	color: #36648B
+} 
+
+a:hover{
+	color: #00B2EE ; 
+} 
+
+/******************************************** LAYOUT STYLE CSS *******************************/ 
+#container
+{
+	margin: 0 auto;
+	width: 1000px;
+}
+
+.navhome{
+	margin: 0; 
+	background: url(header_slicehome.jpg);
+	background-repeat:repeat-x;
+	font-family: PTSansRegular, Arial, Helvetica, Tahoma, sans-serif;
+	background-color: #f9f9f9;
+	overflow-x: hidden; 
+}
+
+#tagline{
+	font-family: PTSansNarrowBold, Arial, Helvetica, Tahoma, sans-serif;
+	color: #e8b400; 
+	font-size: 14pt; 
+	font-weight: bold; 
+	margin-left: 200px; 
+	margin-top: -28px; 
+} 
+
+.first{
+	margin-top: -40px; 
+}
+
+#header
+{
+	padding: 0px;
+	position: relative; 
+	height: 120px; 
+}
+
+.logo{
+	padding: 10px; 
+}
+
+#header h1
+{
+	margin: 0;
+}
+
+#navigation
+{
+	float: right;
+	width: 500px;
+	position: absolute; 
+	left: 580px; 
+	top: 60px; 
+}
+
+#navigation ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+#navigation ul li
+{
+	list-style-type: none;
+	display: inline;
+}
+
+#content
+{
+	clear: left;
+	padding: 20px;
+	font-family: DroidSansRegular, Arial, Helvetica, Tahoma, sans-serif;  
+	font-size: 10pt; 
+	line-height:170%
+}
+
+#content h2
+{
+	text-shadow: #e7f1f8 0 3px 0;
+    color: #FF6600;
+	font-size: 40px;
+	font-family: PTSansNarrowRegular, Arial, Helvetica, Tahoma, sans-serif; 
+	margin: 7px; 
+	padding-top: 7px; 
+	padding-bottom: 5px; 
+	margin-bottom: 14px; 
+	padding-left: 40px; 
+}
+
+#content h3
+{
+	text-shadow: #e7f1f8 0 2px 0;
+	font-family: RawengulkSansRegular, Arial, Helvetica, Tahoma, sans-serif;  
+	margin: 4px; 
+	padding: 4px; 
+	padding-left: 45px; 
+}
+
+#content table h3, #footer h3, .hometable h3 a {
+	font-family: PTSansRegular, Arial, Helvetica, Tahoma, sans-serif; 
+	font-size: 13pt; 
+}
+
+.hometable h3 a{
+	padding-left: 22px; 
+}
+#content h3 a{
+	margin-top: 5px;  
+} 
+
+.tours
+{
+	position: relative; 
+} 
+
+.tour 
+{
+	float: left; 
+	width: 50px; 
+}
+.tips
+{
+	clear:both; 
+} 
+
+/******************************************** FOOTER STYLE ******************************************/
+#footer strong {
+	color: white;
+}
+
+#footer {
+	text-decoration: none;
+	list-style: none;
+	color: #FFF; 
+	background:#1c1c1c;
+	text-align: right;
+	padding: 20px;
+	height:250px;
+	clear: both; 
+}
+
+#footer h3{
+	color: #b1b2b8; 
+	font-size: 11pt; 
+	padding: 4px; 
+	border-bottom: 1px solid grey; 
+	margin: 5px; 
+}
+
+#footer table{
+	color: #FFF; 
+	font-size: 9pt; 
+	line-height: 130%; 
+	*border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0; 
+	margin: 0px;
+} 
+
+#footer ul li{ 
+	list-style-image: url(arrow.png); 
+	margin-left: 15px; 
+} 
+
+#footer ul li a{ 
+	border-bottom: 1px dotted #404040; 
+	background-color: transparent; 
+	line-height: 280%; 
+	display: block; 
+	width: 100%; 
+} 
+
+#copy{	
+	background-color: #454646;
+	padding: 10px; 
+	color: #FFF; 
+	text-align: right; 
+	font-size: 10pt; 
+	margin-top: -35px;
+}
+
+/********************************************* Floating Sidebar ******************************/ 
+#floatMenu ul.menu1 li a:hover {  
+    border-color:#0000FF;  
+}  
+
+#floatMenu ul.menu2 li a:hover {  
+    border-color:#FFCC00;  
+}  
+
+#floatMenu ul.menu3 li a:hover {  
+    border-color:#00CCFF;  
+}  
+
+#floatMenu {  
+    position:absolute;  
+    top:150px;   
+	margin-left: -120px;
+    width:120;  
+}  
+#floatMenu ul {  
+    margin-bottom:20px; 
+	list-style-type: none;
+}  
+#floatMenu ul li a {  
+    display:block;  
+    border:1px solid #999;  
+    background-color:#f5f5f5;  
+    border-left:4px solid #999;  
+    text-decoration:none;  
+    color:#000;  
+    padding:5px 5px 5px 10px; 
+	font-family: PTSansNarrowRegular, Arial, Helvetica, Tahoma, sans-serif; 
+	font-size: 12pt; 	
+}
+
+/********************************************* Dropdown style ******************************/ 
+
+.styled-select-dropdown1{
+   width: 130px;
+   height: 30px;
+   background: url(down_arrow.png) no-repeat right #ddd;
+}
+
+.styled-select-dropdown1 select{
+   background-color: transparent;
+   width: 130px;
+   padding: 5px;
+   font-size: 12px;
+   border: 1px solid #ccc;
+   height: 30px;
+   -webkit-appearance: none;
+}
+
+.styled-select-dropdown2{
+   width: 60px;
+   height: 30px;
+   background: url(down_arrow.png) no-repeat right #ddd;
+}
+
+.styled-select-dropdown2 select{
+   background-color: transparent;
+   width: 60px;
+   padding: 5px;
+   font-size: 12px;
+   border: 1px solid #ccc;
+   height: 30px;
+   -webkit-appearance: none;
+}
+
+/********************************************* NAVIGATION SYSTEM ************************************/ 
+ul.topnav {
+	list-style: none;
+	padding: 0 20px;	
+	margin: 0;
+	float: left;
+	width: 400px;
+	font-size: 12px;
+	z-index: 300; 
+}
+
+ul.topnav li {
+	float: left;
+	margin: 0;	
+	padding: 0 15px 0 0;
+	position: relative; 
+}
+
+ul.topnav li a{
+	padding: 10px 15px;
+	color: #4e4e4e;
+	display: block;
+	background: #f5f5f5; 
+	text-decoration: none;
+	float: left;
+	border-radius: 4px; 
+	-moz-border-radius: 4px; 
+	-webkit-border-radius: 4px; 
+	font-family: PTSansNarrowRegular, Arial, Helvetica, Tahoma, sans-serif; 
+	font-size: 12pt; 
+}
+
+ul.topnav li a:hover {
+	padding: 10px 15px;
+	border: 1px solid #ddd;
+	border-color: rgba(0,0,0,.15); 
+	color: #4e4e4e;
+	display: block;
+	text-decoration: none;
+	float: left;
+	background: #f5f5f5;
+  	background: -moz-linear-gradient(100% 100% 90deg, #f5f5f5, #fff);
+  	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#f5f5f5));
+	border-radius: 4px; 
+	-moz-border-radius: 4px; 
+	-webkit-border-radius: 4px;
+}
+
+ul.topnav li  a.current{
+	padding: 10px 15px;
+	border: 1px solid #ddd;
+	border-color: rgba(0,0,0,.15); 
+	color: #4e4e4e;
+	display: block;
+	text-decoration: none;
+	float: left;
+	background: #f5f5f5;
+  	background: -moz-linear-gradient(100% 100% 90deg, #f5f5f5, #fff);
+  	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#f5f5f5));
+	border-radius: 4px; 
+	-moz-border-radius: 4px; 
+	-webkit-border-radius: 4px;
+}
+
+ul.topnav li span { /*--Drop down trigger styles--*/
+	width: 17px;
+	height: 35px;
+	float: left;
+	background: url(subnav_btn.gif) no-repeat center top;
+}
+ul.topnav li span.subhover {background-position: center bottom; cursor: pointer;} /*--Hover effect for trigger--*/
+
+/************************************ SUBNAVIGATION **********************************************/ 
+ul.topnav li ul.subnav {
+	list-style: none;
+	position: absolute; 
+	left: 0; 
+	top: 35px;
+	background: #f5f5f5;
+	margin: 0; 
+	padding: 0;
+	display: none;
+	float: left;
+	width: 100px;
+	z-index: 100; 
+}
+
+ul.topnav li ul.subnav li{
+	margin: 0; 
+	padding: 0;
+	clear: both;
+	width: 100px;
+}
+
+html ul.topnav li ul.subnav li a {
+	float: left;
+	/**width: 75px;**/ 
+	background: #f5f5f5;
+	padding-left: 20px;
+}
+
+html ul.topnav li ul.subnav li a:hover { 
+	color: #FF6600; 
+	border: 0; 
+}
+
+/********************************************* Quote Button Style ******************************/ 
+
+.button{
+background:#BEBEBE url(check.ico) no-repeat 10px 8px;
+display:block;
+color:#555555;
+font-weight:bold;
+height:30px;
+line-height:29px;
+margin-bottom:14px;
+text-decoration:none;
+width:150px;
+text-indent:10px;
+}
+
+.button:hover{
+color:#0066CC;
+}
+
+/********************************************* TABLES CSS ******************************/ 
+/** General table styling **/
+table {
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0; 
+	border: 0px; 
+	font-size: 10pt;
+	line-height:170%; 
+	margin-top: 20px; 
+}
+
+th{
+	background-color: #7c879d; 
+	padding: 5px; 
+	margin: 2px; 
+	color: #FFF; 
+	border: 0px; 
+}
+
+tr{
+	border: 0px; 
+	padding: 15px; 
+}
+
+td{
+	border: 0px;
+	padding: 10px; 
+}
+
+tr.odd{
+	background-color: #EDEDED; 
+} 
+
+tr.even{
+	background-color: #dfe5f0;
+}
+
+/** Country tables styling **/ 
+table .countryinfo a:hover{
+	color: #FF6600; 
+} 
+
+.countryinfo img{
+	border: 1px solid #B8B8B8;
+	padding: 5px; 
+} 
+
+table.countryinfo{
+	border: 1px solid  #CFCFCF;
+}
+.countryinfo th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+.countryinfo th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.countryinfo th:only-child{
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.countryinfo tr:hover td{
+	background-color: #D9D9F3; 
+} 
+
+.countrytable h3{
+	font-size: 12pt; 
+	color: #3299CC; 
+}
+
+/** Index page table **/ 
+
+.hometable td{
+	padding:2px; 
+}
+
+.hometable ul li{
+	list-style-type: none; 
+}
+
+.hometable tr {
+	padding-top:50px; 
+}
+
+.hometable tr.withpaddingontop > td
+{
+  padding-top: 30px;
+} 
+
+table.hometable{
+	vertical-align: top;
+	border: 1px solid  #CFCFCF;
+	margin-top: -20px;
+	padding-top: 20px;
+	padding: 10px;
+	padding-left: 14px; 
+	background: #EDEDED;
+	line-height: 120%;
+}
+
+/************************************ Image styling *******************************************/
+.small {
+	padding: 5px; 
+	border: 1px solid grey; 
+}
+
+.glossy .image-wrap {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.glossy .image-wrap:after {
+	position: absolute;
+	content: ' ';
+	width: 100%;
+	height: 50%;
+	top: 0;
+	left: 0;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: -moz-linear-gradient(top, rgba(255,255,255,0.7) 0%, rgba(255,255,255,.1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.7)), color-stop(100%,rgba(255,255,255,.1)));
+	background: linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,.1) 100%);
+}
+
+/****************************************** FONTS **************************************************/ 
+@font-face {
+    font-family: 'DroidSansRegular';
+    src: url('fonts/DroidSans-webfont.eot');
+    src: url('fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DroidSans-webfont.woff') format('woff'),
+         url('fonts/DroidSans-webfont.ttf') format('truetype'),
+         url('fonts/DroidSans-webfont.svg#DroidSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DroidSansBold';
+    src: url('fonts/DroidSans-Bold-webfont.eot');
+    src: url('fonts/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DroidSans-Bold-webfont.woff') format('woff'),
+         url('fonts/DroidSans-Bold-webfont.ttf') format('truetype'),
+         url('fonts/DroidSans-Bold-webfont.svg#DroidSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTSansNarrowRegular';
+    src: url('fonts/PTN57F-webfont.eot');
+    src: url('fonts/PTN57F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/PTN57F-webfont.woff') format('woff'),
+         url('fonts/PTN57F-webfont.ttf') format('truetype'),
+         url('fonts/PTN57F-webfont.svg#PTSansNarrowRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PTSansCaptionBold';
+    src: url('fonts/PTC75F-webfont.eot');
+    src: url('fonts/PTC75F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/PTC75F-webfont.woff') format('woff'),
+         url('fonts/PTC75F-webfont.ttf') format('truetype'),
+         url('fonts/PTC75F-webfont.svg#PTSansCaptionBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PTSansCaptionRegular';
+    src: url('fonts/PTC55F-webfont.eot');
+    src: url('fonts/PTC55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/PTC55F-webfont.woff') format('woff'),
+         url('fonts/PTC55F-webfont.ttf') format('truetype'),
+         url('fonts/PTC55F-webfont.svg#PTSansCaptionRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PTSansBoldItalic';
+    src: url('fonts/PTS76F-webfont.eot');
+    src: url('fonts/PTS76F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/PTS76F-webfont.woff') format('woff'),
+         url('fonts/PTS76F-webfont.ttf') format('truetype'),
+         url('fonts/PTS76F-webfont.svg#PTSansBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PTSansBold';
+    src: url('fonts/PTS75F-webfont.eot');
+    src: url('fonts/PTS75F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/PTS75F-webfont.woff') format('woff'),
+         url('fonts/PTS75F-webfont.ttf') format('truetype'),
+         url('fonts/PTS75F-webfont.svg#PTSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PTSansItalic';
+    src: url('fonts/PTS56F-webfont.eot');
+    src: url('fonts/PTS56F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/PTS56F-webfont.woff') format('woff'),
+         url('fonts/PTS56F-webfont.ttf') format('truetype'),
+         url('fonts/PTS56F-webfont.svg#PTSansItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PTSansRegular';
+    src: url('fonts/PTS55F-webfont.eot');
+    src: url('fonts/PTS55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/PTS55F-webfont.woff') format('woff'),
+         url('fonts/PTS55F-webfont.ttf') format('truetype'),
+         url('fonts/PTS55F-webfont.svg#PTSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PTSansNarrowBold';
+    src: url('fonts/PTN77F-webfont.eot');
+    src: url('fonts/PTN77F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/PTN77F-webfont.woff') format('woff'),
+         url('fonts/PTN77F-webfont.ttf') format('truetype'),
+         url('fonts/PTN77F-webfont.svg#PTSansNarrowBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'RawengulkSansRegular';
+    src: url('fonts/RawengulkSans-094-webfont.eot');
+    src: url('fonts/RawengulkSans-094-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/RawengulkSans-094-webfont.woff') format('woff'),
+         url('fonts/RawengulkSans-094-webfont.ttf') format('truetype'),
+         url('fonts/RawengulkSans-094-webfont.svg#RawengulkSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
